@@ -116,7 +116,7 @@ function build_mtproto() {
             rm -rf 'MTProxy'
         fi
 
-        git clone https://github.com/ellermister/MTProxyC --depth=1 MTProxy
+        git clone https://github.com/TelegramMessenger/MTProxy.git --depth=1 MTProxy
         cd MTProxy && make && cd objs/bin &&  chmod +x mtproto-proxy
 
         if [ ! -f "./mtproto-proxy" ]; then
